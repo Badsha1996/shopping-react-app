@@ -1,6 +1,6 @@
 import { BsPersonCircle, BsTwitch, BsWhatsapp } from "react-icons/bs";
 import { PaymentLogo } from "../assets/images";
-import { AiOutlineShoppingCart, AiOutlineGithub, AiOutlineFacebook, AiOutlineTwitter, AiOutlineYoutube } from "react-icons/Ai"
+import { AiOutlineShoppingCart, AiOutlineGithub, AiOutlineFacebook, AiOutlineTwitter, AiOutlineYoutube } from "react-icons/ai"
 
 export default function Footer() {
     return (
