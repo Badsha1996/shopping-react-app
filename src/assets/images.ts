@@ -1,3 +1,8 @@
 import ShopLogo from "./shopLogo.png"
 import CartLogo from "./cartLogo.png"
-export { ShopLogo, CartLogo}
+import PaymentLogo from "./paymentLogo.png"
+export {
+    ShopLogo,
+    CartLogo,
+    PaymentLogo
+}
