@@ -2,7 +2,7 @@ import { CartLogo, ShopLogo } from "../assets/images"
 
 export default function Navbar() {
     return (
-        <div className="w-full h-20 bg-white/80 border-b-[0.05rem] border-gray-700">
+        <div className="fixed z-10 w-full h-20 bg-white border-b-[0.05rem] border-gray-700">
             <div className="max-w-screen-xl h-full mx-auto flex items-center justify-between">
                 <div className="flex items-center">
                     <img src={ShopLogo} className="w-16 mix-blend-normal" alt="PageLogo" />
