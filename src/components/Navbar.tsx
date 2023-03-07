@@ -1,5 +1,4 @@
-import ShoppingBagOutlined from "@mui/icons-material/ShoppingBagOutlined"
-import { ShopLogo } from "../assets/images"
+import { CartLogo, ShopLogo } from "../assets/images"
 
 export default function Navbar() {
     return (
@@ -28,7 +27,7 @@ export default function Navbar() {
                         cursor-pointer">Blog</li>
                     </ul>
                     <div>
-                        <ShoppingBagOutlined />
+                        <img src={CartLogo} alt="" />
                     </div>
                 </div>
             </div>
