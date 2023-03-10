@@ -48,12 +48,12 @@ export default function Navbar() {
 
                     {/* MOBILE HUMBURGER MENU */}
                     <div className="md:hidden h-[15rem]  mt-[12rem] w-12 mr-1 flex flex-col gap-4 items-center">
-                        <div className={`${isOpen === true?'bg-red-500/60 border  border-black':'bg-inherit'}`}>
+                        <div className={`${isOpen === true?' ':'bg-inherit'}`}>
                             <Hamburger size={20} toggled={isOpen} toggle={setOpen} distance="lg" duration={0.8} />
                         </div>
 
                         <div >
-                            <ul className={` ${isOpen == false ? 'hidden' : 'block'} border bg-red-500/60 pl-1 items-center flex flex-col gap-4 w-max transition-all ease-in-out`}>
+                            <ul className={` ${isOpen == false ? 'hidden' : 'block'} border bg-red-600 pl-1 items-center flex flex-col gap-4 w-max transition-all ease-in-out`}>
                                 <li className=" rounded-full text-base text-black font-bold hover:text-white md:hover:text-red-600
                         hover:underline underline-offset-2 decoration-[0.1rem] 
                         cursor-pointer flex">Home</li>

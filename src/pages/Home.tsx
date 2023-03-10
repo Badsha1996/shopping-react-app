@@ -34,7 +34,7 @@ function Home() {
   if (status === "error") return <>{JSON.stringify(error)}</>
 
   return (
-    <div className="">
+    <div >
       <Slider />
       <Items items={items}/>
     </div>

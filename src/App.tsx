@@ -8,7 +8,9 @@ import { Outlet,
   RouterProvider, 
   ScrollRestoration } from "react-router-dom"
 
-// Layout of Router 
+
+const queryClient = new QueryClient()
+
 const Layout = () =>{
   return (
     <>
@@ -36,7 +38,7 @@ const router = createBrowserRouter([
   }
 ])
 
-const queryClient = new QueryClient()
+
 function App() {
  
   return (

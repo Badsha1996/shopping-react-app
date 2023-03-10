@@ -8,8 +8,8 @@ export default function Items({ items }: { items: Array<unknown> }) {
         <span className="w-28 h-[0.3rem] bg-black"></span>
         <p className="max-w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corrupti numquam nostrum aperiam cupiditate odit dolores mollitia voluptates esse facilis.</p>
       </div>
-      <div className="max-w-screen-xl mx-auto py-10
-      grid grid-cols-4 gap-10">
+      <div className="max-w-screen-xl mx-auto py-10 grid-cols-2
+      grid sm:grid-cols-3 gap-10 md:grid-cols-4">
         {
           items.map((item: any, key: number) => {
             return (
