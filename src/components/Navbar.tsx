@@ -1,12 +1,10 @@
-
 import { CartLogo, ShopLogo } from "../assets/images"
-import { FaBlog, FaHome, FaShopify, FaTshirt } from "react-icons/fa"
-import "./Navbar.css"
 import { Sling as Hamburger } from 'hamburger-react'
 import { useState } from "react"
 
 export default function Navbar() {
     const [isOpen, setOpen] = useState(false)
+    
     return (
         <div className="sticky z-50 top-0 w-full h-20 bg-white border-b-[0.05rem] border-gray-700">
             <div className="max-w-screen-xl h-full mx-auto flex items-center justify-between">
