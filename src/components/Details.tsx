@@ -1,7 +1,14 @@
-export default function Details() {
-  return (  
-    <div>
+import { useState } from "react"
+import { useLocation } from "react-router-dom"
+import { Idata } from "../types/Idata"
 
-    </div>
-  )
+
+export default function Details() {
+    const [details, setDetails]  = useState<Idata>()
+    const location = useLocation()
+    return (
+        <div>
+
+        </div>
+    )
 }

@@ -1,15 +1,7 @@
 import { AiTwotoneTags } from "react-icons/Ai"
 import { FaCartPlus } from "react-icons/fa"
 import { useNavigate } from "react-router-dom"
-
-type Idata = {
-  image: string,
-  title: string,
-  oldPrice: number,
-  price: number,
-  category: string,
-  isNew: boolean
-}
+import { Idata } from "../types/Idata"
 
 
 

@@ -16,6 +16,7 @@ const Layout = () =>{
   return (
     <>
       <Navbar/>
+      <ScrollRestoration/>
       <Outlet/> 
       <Footer/>
     </>

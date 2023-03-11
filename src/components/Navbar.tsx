@@ -1,17 +1,20 @@
 import { CartLogo, ShopLogo } from "../assets/images"
 import { Sling as Hamburger } from 'hamburger-react'
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export default function Navbar() {
     const [isOpen, setOpen] = useState(false)
-    
+
     return (
         <div className="sticky z-50 top-0 w-full h-20 bg-white border-b-[0.05rem] border-gray-700">
             <div className="max-w-screen-xl h-full mx-auto flex items-center justify-between">
-                <div className="flex items-center">
-                    <img src={ShopLogo} className="w-16 mix-blend-normal" alt="PageLogo" />
-                    <span className="text-xl font-bold italic ">ShopNow</span>
-                </div>
+                <Link to={"/"}>
+                    <div className="flex items-center">
+                        <img src={ShopLogo} className="w-16 mix-blend-normal" alt="PageLogo" />
+                        <span className="text-xl font-bold italic ">ShopNow</span>
+                    </div>
+                </Link>
 
                 <div className="flex items-center gap-8 ">
                     <div className="relative">
@@ -48,7 +51,7 @@ export default function Navbar() {
 
                     {/* MOBILE HUMBURGER MENU */}
                     <div className="md:hidden h-[15rem]  mt-[12rem] w-12 mr-1 flex flex-col gap-4 items-center">
-                        <div className={`${isOpen === true?' ':'bg-inherit'}`}>
+                        <div className={`${isOpen === true ? ' ' : 'bg-inherit'}`}>
                             <Hamburger size={20} toggled={isOpen} toggle={setOpen} distance="lg" duration={0.8} />
                         </div>
 
