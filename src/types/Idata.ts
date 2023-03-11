@@ -6,6 +6,7 @@ export type Idata = {
     price: number,
     category: string,
     isNew: boolean,
-    description:string
+    description:string,
+    rating:number
   }
   

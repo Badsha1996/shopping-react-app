@@ -8,16 +8,16 @@ import { Idata } from "../types/Idata"
 export default function Item({ item }: { item: Idata }) {
   const navigate = useNavigate()
   const { image, title, oldPrice, price } = item
-  const _id = title 
+  const _id = title
 
-  const covertId = (_id : string) => {
+  const covertId = (_id: string) => {
     return String(_id).toLowerCase().split(" ").join("");
-  } 
+  }
 
   const ID = covertId(_id)
-  const handleDetails = ()=>{
+  const handleDetails = () => {
     navigate(`/items/${ID}`, {
-      state : {
+      state: {
         item: item
       }
     })
@@ -62,7 +62,7 @@ export default function Item({ item }: { item: Idata }) {
       </div>
 
       <div>
-        <p>{item.category}</p>
+        <p className="font-semibold text-gray-600 text-sm border px-1 underline">{item.category}</p>
       </div>
 
       <div className="absolute top-0 right-0 text-white">

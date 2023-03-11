@@ -50,20 +50,43 @@ export default function Details() {
                     </div>
                     <div className="flex items-center  text-base">
                         <div className="flex">
-                            <MdOutlineStar />
-                            <MdOutlineStar />
-                            <MdOutlineStar />
-                            <MdOutlineStar />
+                            {Array(details?.rating)
+                                .fill(0)
+                                .map((_, index) => (
+                                    <MdOutlineStar key={index + ''} />
+                                ))}
                         </div>
                         <p className="text-gray-400">(Customer Review)</p>
                     </div>
                     <div>
-                        <p>{details?.description}</p>
-                    </div>
-                    <div>
-
+                        <p className="text-sm md:text-base">{details?.description}</p>
                     </div>
 
+
+                    <div className="flex gap-0 md:gap-4 flex-col sm:flex-row items-center justify-center">
+
+                        <div className="w-auto flex items-center justify-between
+                        text-gray-500 gap-4 border p-auto mb-4">
+                            <p className="text-sm">Quintity: </p>
+                            <div className="flex items-center
+                            gap-4 text-sm font-semibold">
+                                <button type="button" className="
+                                flex items-center text-lg justify-center px-2 hover:bg-gray-800
+                                hover:text-white
+                                duration-500 active:bg-black
+                                ">+</button>
+                                <span>1</span>
+                                <button type="button" className="
+                                flex items-center text-lg justify-center px-2 hover:bg-gray-800
+                                hover:text-white
+                                duration-500 active:bg-black
+                                ">-</button>
+                            </div>
+                        </div>
+                        <button className="bg-black text-white  active:bg-gray-800
+                            hover:bg-gray-800 text-[0.7rem] sm:text-base mb-4 md:text-base py-4 px-6">Add to Cart</button>
+
+                    </div>
                 </div>
             </div>
         </div>
