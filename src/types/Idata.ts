@@ -5,6 +5,7 @@ export type Idata = {
     oldPrice: number,
     price: number,
     category: string,
-    isNew: boolean
+    isNew: boolean,
+    description:string
   }
   
