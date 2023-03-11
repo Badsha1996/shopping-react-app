@@ -7,6 +7,7 @@ import { Outlet,
   createBrowserRouter,
   RouterProvider, 
   ScrollRestoration } from "react-router-dom"
+import Details from "./components/Details"
 
 
 const queryClient = new QueryClient()
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path:"/cart",
         element:<Cart/>
+      },
+      {
+        path:"/items/:id",
+        element:<Details/>
       }
     ]
   }

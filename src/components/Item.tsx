@@ -1,5 +1,6 @@
 import { AiTwotoneTags } from "react-icons/Ai"
 import { FaCartPlus } from "react-icons/fa"
+import { useNavigate } from "react-router-dom"
 
 type Idata = {
   image: string,
@@ -10,12 +11,30 @@ type Idata = {
   isNew: boolean
 }
 
+
+
 export default function Item({ item }: { item: Idata }) {
+  const navigate = useNavigate()
   const { image, title, oldPrice, price } = item
+  const _id = title 
+
+  const covertId = (_id : string) => {
+    return String(_id).toLowerCase().split(" ").join("");
+  } 
+
+  const ID = covertId(_id)
+  const handleDetails = ()=>{
+    navigate(`/items/${ID}`, {
+      state : {
+        item: item
+      }
+    })
+  }
   return (
     <div className="group relative">
       {/* Image section */}
-      <div className="border w-full  aspect-square  overflow-hidden cursor-pointer">
+      <div className="border w-full  aspect-square 
+       overflow-hidden cursor-pointer" onClick={handleDetails}>
         <img
           className="w-full h-full object-cover
         group-hover:scale-110 duration-300"
