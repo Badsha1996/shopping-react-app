@@ -7,10 +7,13 @@ import slide2 from "./slider2.jpg"
 import slide3 from "./slider3.jpg"
 import slide4 from "./slider4.jpg"
 import slide5 from "./slider5.jpg"
+
+import Hero from "./Hero.gif"
 export {
     ShopLogo,
     CartLogo,
-    PaymentLogo
+    PaymentLogo,
+    Hero
 }
 
 export const SliderImageArray = [

@@ -45,3 +45,7 @@ img {
     display: block;
     max-width: 100%;
 }
+
+.clip-path{
+    clip-path: polygon(35% 27%, 100% 0, 100% 99%, 86% 97%);
+}

@@ -11,7 +11,6 @@ import Details from "./components/Details"
 
 
 const queryClient = new QueryClient()
-
 const Layout = () =>{
   return (
     <>

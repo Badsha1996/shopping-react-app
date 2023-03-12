@@ -27,7 +27,7 @@ export default function Slider(): JSX.Element {
         <div className="h-auto overflow-x-hidden">
             <div className="w-full relative">
                 <div style={{ transform: `translateX(-${curent * 100}vw)` }} className="w-[500vw] h-[80svh]  
-                flex transition-transform duration-1000">
+                flex transition-transform duration-1000 ">
                     <img className="w-screen  object-cover z-0" src={SliderImageArray[0]} alt="slider images"
                         loading="eager" />
 
@@ -42,7 +42,7 @@ export default function Slider(): JSX.Element {
                     <img className="w-screen h-full object-cover z-0" src={SliderImageArray[4]} alt="slider images"
                         loading="eager" />
                 </div>
-                <div className='absolute w-fit left-0 right-0 mx-auto flex gap-8 bottom-8'>
+                <div className='absolute w-fit  left-0 right-0 mx-auto flex gap-8 bottom-8'>
                     <div className='w-12 h-12 rounded-full border-[0.1rem] border-gray-500 flex items-center 
                     justify-center hover:cursor-pointer
                     hover:bg-gray-600 
