@@ -47,5 +47,6 @@ img {
 }
 
 .clip-path{
-    clip-path: polygon(35% 27%, 100% 0, 100% 99%, 86% 97%);
+    -webkit-clip-path: circle(50.6% at 33% 24%);
+clip-path: circle(50.6% at 33% 24%);
 }
