@@ -1,4 +1,3 @@
-
 export type Idata = {
     image: string,
     title: string,
