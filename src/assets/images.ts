@@ -9,11 +9,14 @@ import slide4 from "./slider4.jpg"
 import slide5 from "./slider5.jpg"
 
 import Hero from "./Hero.gif"
+import CartHero from "./cartImage.jpg"
+
 export {
     ShopLogo,
     CartLogo,
     PaymentLogo,
-    Hero
+    Hero,
+    CartHero
 }
 
 export const SliderImageArray = [

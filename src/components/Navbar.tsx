@@ -1,7 +1,6 @@
 import { CartLogo, Hero, ShopLogo } from "../assets/images"
 import { Sling as Hamburger } from 'hamburger-react'
 import { useState } from "react"
-import { BsActivity, BsBadge4K, BsShare } from "react-icons/bs"
 import { Link } from "react-router-dom"
 
 export default function Navbar() {
@@ -18,11 +17,13 @@ export default function Navbar() {
                 </Link>
 
                 <div className="flex items-center gap-8 ">
+                    <Link to={"/cart"}>
                     <div className="relative">
                         <img src={CartLogo} className="w-8 " alt="shoppingCart" />
                         <span className="absolute w-4 h-4 top-0 left-4 text-sm flex 
                         items-center text-white rounded-full bg-red-600 justify-center font-semibold">4</span>
                     </div>
+                    </Link>
                     <div>
                         <img className="w-8 rounded-full" src="https://lh3.googleusercontent.com/T14Y9Ms8bvvRg5ivZPjoNDJMZ8TIrkaEuUu6xhKLzabfWkTRqBXmooPTWqsdbmO7_Y288bAPl1bwG_NeAU7Lt5Q3lwibbZz7PnDvGLV2ciG2LQE7=w380-nu-rj-l70-e365" alt="profileLogo" />
                     </div>
